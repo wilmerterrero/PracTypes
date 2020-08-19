@@ -1,0 +1,15 @@
+span {
+    font-size: 1.5rem !important;
+    color: #ffffff !important;
+    line-height: 1 !important;
+}
+
+img {
+    margin-right: .6rem !important;
+    margin-left: 1rem !important;
+}
+
+a {
+    font-size: 27px;
+    color: #ffffff;
+}
