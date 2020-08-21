@@ -3,6 +3,7 @@ import EmpleadoPorHora from "./EmpleadoPorHora";
 import EmpleadoFijo from "./EmpleadoFijo";
 import EmpleadoTemporal from "./EmpleadoTemporal";
 import Pages from "../../pages/pagination/pagination";
+import Documentation from "../../pages/documentation";
 
 const Employees = () => {
 
@@ -56,9 +57,13 @@ const Employees = () => {
         link="oop"
         name="OOP"
       />
+      <Documentation 
+        title=""
+        text=""
+      />
       <div className="container">
         <div className="row justify-content-md-center">
-          <div className="col-6">
+          <div className="col-sm-12 col-lg-6">
             <div className="input-group mb-3">
               <select 
                   className="custom-select"

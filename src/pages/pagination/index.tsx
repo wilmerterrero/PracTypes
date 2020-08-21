@@ -7,11 +7,6 @@ import './pagination.css';
 
 const dir = <FontAwesomeIcon icon={faFolder} />;
 
-/*
-TODO: When click dir simulate a open dir in the current dir
-      Example: oop/polimorfismo. If a click oop, go back to '/'
-*/
-
 const ExampleList = () => {
   return (
     <div className="pagination">
