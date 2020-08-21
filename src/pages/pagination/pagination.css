@@ -7,3 +7,13 @@
     list-style: none;
     margin: 1em;
 }
+
+.pages {
+    padding-top: 2rem;
+    padding-left: 2em;
+}
+
+.pages a{
+    font-size: 1.5em;
+    margin: 5px;
+}

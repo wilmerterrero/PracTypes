@@ -1,22 +1,17 @@
-import React from "react";
+import React from 'react'
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFolder } from "@fortawesome/free-solid-svg-icons";
 
-import './pagination.css';
-
-const Folder = <FontAwesomeIcon icon={faFolder} />;
-
-const ExampleList = () => {
-  return (
-    <div className="pagination">
-        <ul>
-            <li><Link to={'/polimorfismo'}>{Folder} OOP</Link></li>
-            <li><Link to={'/polimorfismo'}>{Folder} Design Patterns</Link></li>
-            <li><Link to={'/polimorfismo'}>{Folder} Types</Link></li>
-        </ul>
-    </div>
-  );
-};
-
-export default ExampleList;
+type Props = {
+    link: string;
+    name: string;
+}
+ 
+const Pages: React.SFC<Props> = ({ link, name }) => {
+    return ( 
+        <div className="pages">
+            <Link to={link}>{name}/</Link>
+        </div>
+     );
+}
+ 
+export default Pages;

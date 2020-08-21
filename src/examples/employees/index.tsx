@@ -2,6 +2,7 @@ import React, { useState, FormEvent, ChangeEvent } from "react";
 import EmpleadoPorHora from "./EmpleadoPorHora";
 import EmpleadoFijo from "./EmpleadoFijo";
 import EmpleadoTemporal from "./EmpleadoTemporal";
+import Pages from "../../pages/pagination/pagination";
 
 const Employees = () => {
 
@@ -50,37 +51,43 @@ const Employees = () => {
   };
 
   return (
-    <div className="container">
-      <div className="row justify-content-md-center">
-        <div className="col-6">
-          <div className="input-group mb-3">
-            <select 
-                className="custom-select"
-                onChange={handleChange}
-            >
-              <option defaultValue="0">Choose...</option>
-              <option value={empleadofijo}>Permanent</option>
-              <option value={empleadohora}>Contractors</option>
-              <option value={empleadotemporal}>Temporal</option>
-            </select>
-            <div className="input-group-append">
-              <button
-                className="btn btn-primary"
-                type="submit"
-                onClick={handleClick}
+    <>
+      <Pages 
+        link="oop"
+        name="OOP"
+      />
+      <div className="container">
+        <div className="row justify-content-md-center">
+          <div className="col-6">
+            <div className="input-group mb-3">
+              <select 
+                  className="custom-select"
+                  onChange={handleChange}
               >
-                Button
-              </button>
+                <option defaultValue="0">Choose...</option>
+                <option value={empleadofijo}>Permanent</option>
+                <option value={empleadohora}>Contractors</option>
+                <option value={empleadotemporal}>Temporal</option>
+              </select>
+              <div className="input-group-append">
+                <button
+                  className="btn btn-primary"
+                  type="submit"
+                  onClick={handleClick}
+                >
+                  Button
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="row justify-content-md-center">
-        <div className="col-6">
-          <div id="response"></div>
+        <div className="row justify-content-md-center">
+          <div className="col-6">
+            <div id="response"></div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
